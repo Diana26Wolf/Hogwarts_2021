@@ -1,0 +1,50 @@
+<html>
+
+<head>
+	<title>Great Hall</title>
+	<link rel="shortcut icon" type="image/jpg" href="Hogwarts.png"/>
+	<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+	<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body id="great_hall">
+	<audio autoplay="autoplay" hidden="hidden"> <source src="Harry Potter main theme.mp3" type="audio/mpeg">Finn </audio> 
+	<div class="container">
+		<button id="logout" class="glyphicon glyphicon-log-out btn btn-primary" onclick="Logout()">Logout</button>
+		<center>
+			<h1 class="header">
+				Great Hall
+			</h1>
+			<h3 class="color_white" id="username"> </h3>
+			<center>
+				<button class="btn btn-primary" onclick="Secret()" id="secret">This button is to be clicked by professors
+					only</button>
+			</center>
+			<br><br>
+			<div>
+			<h3 class="color_white">Common Romms and Classooms</h3>
+				<div id="rooms">
+
+				</div>
+			</div>
+			
+
+		</center>
+	</div>
+	<script src="hogwarts_room.js"></script>
+	<script src="Professors.js"></script>
+</body>
+
+</html>

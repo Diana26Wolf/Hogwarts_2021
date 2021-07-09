@@ -1,0 +1,48 @@
+<html>
+
+<head>
+	<title>Professors Page</title>
+	<link rel="shortcut icon" type="image/jpg" href="Hogwarts.png"/>
+	<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+	<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body id="professors">
+	<audio autoplay="autoplay" hidden="hidden"> <source src="Harry Potter main theme.mp3" type="audio/mpeg">Finn </audio> 
+	<div class="container">
+		<button id="logout" class="glyphicon glyphicon-log-out btn btn-primary" onclick="Logout()">Logout</button>
+		<center>
+			<h1 class="header">
+				Professors Page
+			</h1>
+			<h3 class="color_white" id="username">Welcome Professor! </h3>
+			<div class="form-group input_div_room_page">
+				<h3>Add Classroom:</h3><br>
+				<input placeholder="Type the classroom name" id="room2">
+			</div>
+			<button class="btn btn-primary" onclick="Add()">Add Classroom</button><br><br>
+			<button class="btn btn-primary" onclick="Back()">Go Back To The Great Hall</button>
+			<div>
+				<h3 class="color_white">Common Rooms and Classooms</h3>
+				<div id="rooms">
+	
+				</div>
+				</div>
+		</center>
+	</div>
+	<script src="Professors.js"></script>
+</body>
+
+</html>

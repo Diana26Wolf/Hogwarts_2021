@@ -1,0 +1,40 @@
+<html>
+<head>
+	<title>Hogwarts-2021</title>
+	<link rel="shortcut icon" type="image/jpg" href="Hogwarts.png"/>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body id="classroom">
+	<audio autoplay="autoplay" hidden="hidden"> <source src="Harry Potter main theme.mp3" type="audio/mpeg">Finn </audio> 
+<div class="container">
+	<button id="logout" class="glyphicon glyphicon-log-out btn btn-danger" onclick="Logout()">Logout</button>
+	<center>
+		<h1 id="head" class="header">	
+		Hogwarts-2021	
+		</h1>
+		<div style="text-align: left;margin-bottom: 70px;" id="Output"> </div>
+	</center>
+</div>
+
+<center>
+	<div class="input_div_message_page">
+		<h3>Send:</h3>
+		<input id="Msg" placeholder="Type your message here" type="text"><br>
+		<button class="btn btn-primary" onclick="Send()">Send</button>
+	</div>
+</center>
+
+<script src="hogwarts_page.js"></script>
+</body>
+</html>
